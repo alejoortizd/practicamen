@@ -23,7 +23,7 @@ formulario.addEventListener('submit', async e => {
   if(resultado.codigo === 201) {
     const mensaje = document.createElement('div');
     mensaje.classList.add('mensaje-url');
-    mensaje.innerHTML = `<p>Se ha acortado correctamente la URL, visita <a target="_blank" rel="noopener noreferrer" href="/${resultado.url}"> el enlace aqui</a></p>`;
+    mensaje.innerHTML = `<p>Se ha acortado correctamente la URL, visita <a target="_blank" rel="noopener noreferrer" href="/${resultado.url}"> ${resultado.url}</a></p>`;
 
     const contenedor = document.querySelector('main');
     contenedor.appendChild(mensaje);
